@@ -49,13 +49,6 @@ public class MainActivity extends AppCompatActivity {
 
         money.setText(Integer.toString(count_money));
 
-//        Timer timer = new Timer();
-//        timer.scheduleAtFixedRate(new TimerTask() {
-//            @Override
-//            public void run() {
-//                runOnUiThread();
-//            }
-//        });
         ScheduledExecutorService service = Executors.newSingleThreadScheduledExecutor();
         service.scheduleAtFixedRate(new Runnable() {
             @Override
